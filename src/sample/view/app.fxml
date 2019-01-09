@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.HomeController">
     <children>
         <AnchorPane layoutY="92.0" prefHeight="308.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
             <children>
@@ -20,9 +20,14 @@
                         <Font size="36.0" />
                     </font>
                 </Label>
-            <ImageView fx:id="imageButtonHome" fitHeight="204.0" fitWidth="252.0" layoutX="248.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imageButtonHome" fitHeight="204.0" fitWidth="252.0" layoutX="399.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/ubuntu2.png" />
+                  <Image url="@../assets/ubuntu2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageButtonUp" fitHeight="210.0" fitWidth="212.0" layoutX="56.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Happy-Stitch.gif" />
                </image>
             </ImageView>
             </children>
