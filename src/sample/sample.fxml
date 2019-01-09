@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <AnchorPane layoutY="92.0" prefHeight="308.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
          <children>
-            <TextField layoutX="179.0" layoutY="80.0" prefHeight="25.0" prefWidth="342.0" promptText="Login" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5px;">
+            <TextField fx:id="loginField" layoutX="179.0" layoutY="80.0" prefHeight="25.0" prefWidth="342.0" promptText="Login" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5px;">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="179.0" layoutY="154.0" prefHeight="25.0" prefWidth="342.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5px;">
+            <PasswordField fx:id="passwordField" layoutX="179.0" layoutY="154.0" prefHeight="25.0" prefWidth="342.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5px;">
                <font>
                   <Font size="17.0" />
                </font>
@@ -30,7 +22,7 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Button layoutX="272.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #F39C63; -fx-background-radius: 30px;" text="Comin" textFill="#fcf8f8">
+            <Button fx:id="authSignButton" layoutX="272.0" layoutY="224.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="170.0" style="-fx-background-color: #F39C63; -fx-background-radius: 30px;" text="Come in" textFill="#fcf8f8">
                <font>
                   <Font size="27.0" />
                </font>
@@ -42,7 +34,7 @@
             <Font size="60.0" />
          </font>
       </Label>
-      <Button layoutX="542.0" layoutY="29.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #F39C63;" text="Registration" textFill="#fcf8f8">
+      <Button fx:id="loginSignUpButton" layoutX="542.0" layoutY="29.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #F39C63;" text="Registration" textFill="#fcf8f8">
          <font>
             <Font size="16.0" />
          </font>
