@@ -1,12 +1,14 @@
 package sample.controllers;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import sample.DataBaseHandler;
 
 public class SignUpController {
 
@@ -45,6 +47,18 @@ public class SignUpController {
     @FXML
     void initialize() {
 
+        DataBaseHandler dataBaseHandler = new DataBaseHandler();
 
+        signUpButton.setOnAction(event -> {
+            try {
+                dataBaseHandler.signUpUser(signUpFirstName.getText(), signUpLastName.getText(),
+                        loginField.getText(), passwordField.getText(), signUpCountry.getText(), "Male");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        });
     }
 }
